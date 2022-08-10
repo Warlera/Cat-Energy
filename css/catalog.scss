@@ -1,0 +1,149 @@
+.header_block_catalog {
+    width: 50%;
+}
+.header_block_catalog:nth-child(2) {
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+}
+.catalog_text {
+    font-size: 60px;
+}
+.catalog_text p{
+    margin: 0;
+}
+.map {
+    margin: 0;
+}
+.catalog_block {
+    width: 245px;
+    height: 431px;
+    background: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.catalog_img {
+    position: absolute;
+    margin-top: -50px;
+}
+.catalog_table{
+    margin-top: 162px;
+    width: 130px;
+    border-collapse: collapse;
+}
+.catalog_table td {
+    height: 30px;
+    border-bottom: 1px solid #CDCDCD;
+}
+.plus {
+    margin-top: 100px;
+}
+.catalog_plus {
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.catalog_plus a{
+    width: 150px;
+    margin: 27px auto;
+}
+.more {
+    background: #FFFFFF;
+    border: 1px solid #CDCDCD;
+}
+.active{
+    display: none;
+}
+@media (max-width:1440px) {
+  .catalog_block {
+      margin: 70px auto;
+  }
+  .map {
+      margin-top: -250px;
+  }
+  .header_mob {
+    height: auto;
+  } 
+  .more_img {
+      display: none;
+  }
+  .more_table {
+      display: none;
+  }
+  .more_table_mob {
+      height: 150px;
+      margin-bottom: 50px;
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+      border-bottom: 1px solid #CDCDCD;
+  }
+  .catalog_text {
+      font-size: 30px;
+      padding: 0 20px;
+      margin-bottom: 50px;
+  }
+  .table_button {
+      margin:  30px;
+      padding: 20px 100px;
+  }
+}
+@media (min-width:1440px) {
+
+    .header_mob {
+        display: none;
+    }
+    .nav_link {
+        color:#000000;
+    }
+    .nav_link:hover {
+        padding-bottom: 8px;
+        border-bottom: #000000 solid 2px;
+    }
+    .catalog {
+        padding: 75px 110px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .catalog_text {
+        padding: 20px 110px;
+    }
+    .more_table {
+        width: 900px;
+        border-collapse: collapse;
+    }
+    .more_table td {
+        height: 70px;
+        border-bottom: 1px solid #CDCDCD;
+    }
+    .more_table td:nth-child(1) {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .more_table td:nth-child(4) a{
+        background: #5EAA2F;
+        color: #FFFFFF;
+        padding: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .more_img {
+        background: url("../img/catalog/gift-photo-desktop.png");
+        width: 245px;
+        height: 289px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    .more_img img{
+        padding-top: 50px;
+    }
+    .more_table_mob {
+        display: none;
+    }
+    .active {
+        display: none;
+    }
+}

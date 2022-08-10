@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cat energy</title>
+    <link rel="icon" href="img\32.png">
+</head> 
+<body>
+    <header>
+        <div class="container">
+            <div class="header">
+                <div class="header_block_catalog">
+                    <a href="index.html"><img class="logo" src="img/logo-desktop.png"></a>
+                </div><!--header_block-->
+                <div class="header_block_catalog">
+                    <div class="nav">
+                     <a class="nav_link" href="index.html">главная</a>
+                     <a class="nav_link" href="catalog.html">каталог продукции</a>
+                     <a class="nav_link" href="form.html">подбор программы</a>
+                    </div>
+                </div><!--header_block-->
+            </div><!--header-->
+            <div class="header_mob">
+                <div class="block">
+                    <div class="mob_logo">
+                        <img src="img\logo-mobile.png">
+                        <img src="img\footer\footer-logo.png">
+                        <div class="cross"></div>
+                    </div><!--mob_logo-->
+                    <div class="nav_mob active">
+                        <a class="nav_link" href="index.html">главная</a>
+                        <a class="nav_link" href="catalog.html">каталог продукции</a>
+                        <a class="nav_link" href="form.html">подбор программы</a>
+                    </div><!--nav_mob-->
+                </div>
+            </div><!--header_mob-->
+        </div><!--container-->
+    </header>
+    <div class="container">
+        <div>
+            <div class="form_block">
+                <p>Подбор программы</p>
+                <p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
+            </div><!--Подбор программы-->
+            <div class="form_questionnaire">
+                <div class="form_questionnaire_text">
+                    <label>ИМЯ:*</label>
+                    <input type="text" id="name" placeholder="Барсик">
+                    <label>Вес (кг):*</label>
+                    <input type="text" id="kg">
+                    <label>Возраст (лет):</label>
+                    <input type="text" id="old">
+                </div>
+                <div class="form_questionnaire_radio">
+                    <label>
+                        <input type="radio" id="target+" name="target">
+                        похудение
+                    </label>
+                    <label>
+                        <input type="radio" id="target-" name="target">
+                        Набор массы
+                    </label>
+                    <label>
+                        <input type="radio" id="help" name="target">
+                        Не знаю (Нужен ваш совет)
+                    </label>
+                </div>
+            </div>
+        </div><!--1-->
+        <p class="form_block">Контактные данные (владельца кота)</p>
+        <div class="form_block">
+            <label>E-mail:*</label>
+            <input type="text" id="mail" placeholder="кuklachev@gmail.com">
+            <label>Телефон:*</label>
+            <input type="text" id="phone" placeholder="8 (960) 900-60-90">
+        </div><!--2-->
+        <p class="form_block">Комментарий</p>
+        <div class="form_text">
+            <textarea placeholder="Расскажите обо всех повадках кота"></textarea>
+        </div><!--3-->
+        <p class="form_block">Дополнительно</p>
+        <div class="form_block">
+            <div class="form_checkbox">
+                <input type="checkbox" id="sweetener" name="sweetener">
+                <label for="sweetener">сахарозаменитель</label>
+                <input type="checkbox" id="water" name="water">
+                <label for="water">питьевая вода</label>
+                <input type="checkbox" id="milk" name="milk">
+                <label for="milk">молоко</label>
+                <input type="checkbox" id="vitamins" name="vitamins">
+                <label for="vitamins">витамины</label>
+            </div>
+            <div class="form_button">
+                <a class="button">показать все</a>
+                <p>* — Обязательные поля</p>
+            </div>
+        </div><!--4-->
+    </div><!--container-->
+     </main>
+     <footer>
+        <div class="container">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d840.3108580840387!2d30.322423454946982!3d59.938658155802855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1651686639220!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="block">
+                <div class="footer">
+                <div>
+                    <img src="img\footer\footer-logo.png">
+                </div>
+                <div class="footer_icon">
+                    <a href="#"><img src="img\footer\icon_vkontakte.png"></a>
+                    <a href="#"><img src="img\footer\icon_instagram.png"></a>
+                    <a href="#"><img src="img\footer\icon_facebook.png"></a>
+                </div>
+                <div class="html_academy">
+                    <img src="img\footer\HTML Academy.png">
+                    <img src="img\footer\html academy1.png">
+                </div>
+            </div><!--footer-->
+            </div><!--block-->
+        </div><!--container-->
+     </footer> 
+     <script>
+        let cross = document.querySelector('.cross');
+        let logo = document.querySelector('.mob_logo');
+        let nav = document.querySelector('.nav_mob');
+
+        logo.onclick = function () {
+        nav.classList.toggle('active');
+        cross.classList.toggle('cross_active');
+        };
+     </script>
+ </body>
+</html>
